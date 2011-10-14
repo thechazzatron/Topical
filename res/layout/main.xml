@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/TopicalBackground"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 	<TextView
-        android:background="#c4c4c4"
-        android:textColor="#343434"
+		style="@style/ForegroundItems"
     	android:layout_width="fill_parent" 
    	    android:layout_height="wrap_content" 
   	    android:text="@string/topicalTitle"
   	    android:textSize="28sp"
   	    android:textStyle="bold"
   	    android:gravity="center_horizontal"/>
-	<EditText android:id="@+id/SearchText"
-    	android:layout_width="fill_parent" 
-   	    android:layout_height="wrap_content"/>
-    <Button android:id="@+id/SearchButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Search"
-            android:onClick="search"/>
+  	    
+  	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	    android:orientation="horizontal"
+  	    android:layout_width="fill_parent" 
+  	    android:layout_height="wrap_content">
+  	    
+			<EditText android:id="@+id/SearchText"
+		    	android:layout_width="206dp"
+		    	android:layout_margin="5dp" 
+		    	android:layout_height="match_parent"/>
+		    <Button android:id="@+id/SearchButton"
+		    		style="@style/ForegroundItems"
+		    		android:layout_margin="5dp"
+		            android:layout_width="fill_parent"
+		            android:text="Search"
+		            android:onClick="search" 
+		            android:layout_height="match_parent"/>
+        </LinearLayout>
+        
     <Button android:id="@+id/ShowFollowedPostsButton"
+    		style="@style/ForegroundItems"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Followed Posts"
