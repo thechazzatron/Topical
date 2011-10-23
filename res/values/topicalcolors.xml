@@ -1,0 +1,7 @@
+
+    <resources>
+        <color name="DarkOrange">#FF7708</color>
+        <color name="LightOrange">#FF4800</color>
+        <color name="White">#FFFFFF</color>
+        <color name="Black">#000000</color>
+    </resources>
