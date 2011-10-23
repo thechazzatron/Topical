@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<style name="TopicalBackground">
-		<item name="android:background">#FFB76F</item>
+	
+	<style name="DarkOrangeText">
+		<item name="android:textColor">@color/LightOrange</item>
 	</style>
 
-    <style name="ForegroundItems" >
-        <item name="android:background">#FF9900</item>
-        <item name="android:textColor">#000000</item>
+	<style name="TopicalBackground">
+		<item name="android:background">@color/Black</item>
+	</style>
+
+	<style name="ForegroundText" parent="@style/DarkOrangeText">
         <item name="android:typeface">normal</item>
         <item name="android:textSize">28sp</item>
+	</style>
+
+    <style name="ForegroundItems" parent="@style/ForegroundText">
+        <item name="android:background">@drawable/borderbackground</item>
+        <item name="android:layout_margin">5dp</item>
     </style>
+    
+    <style name="TitleText">
+    	<item name="android:background">@drawable/radialback</item>
+    	<item name="android:textColor">@color/DarkOrange</item>
+    	<item name="android:typeface">normal</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+  <style name="MyTheme" parent="android:Theme.Light">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/white</item>
+    <item name="android:listViewStyle">@style/MyListView</item>
+  </style>
+
+  <style name="MyListView" parent="@android:style/Widget.ListView">
+    <item name="android:listSelector">@drawable/list_selector</item>
+  </style>
+   
 </resources>

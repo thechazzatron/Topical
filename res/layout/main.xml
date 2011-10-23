@@ -4,14 +4,11 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-	<TextView
-		style="@style/ForegroundItems"
-    	android:layout_width="fill_parent" 
-   	    android:layout_height="wrap_content" 
-  	    android:text="@string/topicalTitle"
-  	    android:textSize="28sp"
-  	    android:textStyle="bold"
-  	    android:gravity="center_horizontal"/>
+    <TextView 
+    	android:gravity="center_horizontal"  
+    	style="@style/TitleText"
+    	android:text="@string/topicalTitle" 
+    	android:layout_height="wrap_content" android:layout_width="match_parent"/>/
   	    
   	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   	    android:orientation="horizontal"
@@ -24,7 +21,6 @@
 		    	android:layout_height="match_parent"/>
 		    <Button android:id="@+id/SearchButton"
 		    		style="@style/ForegroundItems"
-		    		android:layout_margin="5dp"
 		            android:layout_width="fill_parent"
 		            android:text="Search"
 		            android:onClick="search" 
@@ -38,17 +34,15 @@
             android:text="Followed Posts"
             android:onClick="showFollowedPosts"/>
 	<TextView
-        android:background="#c4c4c4"
-        android:textColor="#343434"
+		style="@style/ForegroundItems"
     	android:layout_width="fill_parent" 
-   	    android:layout_height="wrap_content" 
+   	    android:layout_height="wrap_content"
   	    android:text="@string/myTopics"
-  	    android:textSize="20sp"
-  	    android:textStyle="bold"
   	    android:gravity="center_horizontal"/>
     <ListView android:id="@+id/topicList"
+    	style="@style/ForegroundItems"
 		android:layout_width="fill_parent"
 		android:layout_height="match_parent"
 		android:layout_weight="1"
-		android:drawSelectorOnTop="false"/>
+		android:drawSelectorOnTop="false" />
 </LinearLayout>
